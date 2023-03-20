@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'gilroylight';
+    src: url('font/gilroy-light-webfont.woff2') format('woff2'),
+         url('font/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    height: 110px;
+    position: absolute;
+    width: 100%;
+    background-color: red;
+}
+
+main {
+    height: 100vh;
+}
+
+.s1 {
+    height: 100vh;
+    padding-top: 120px;
+    background-color: blue;
+ 
+}
+
+.s2 {
+    height: 100vh;
+    background-color: green;
+}
