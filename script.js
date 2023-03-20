@@ -1,3 +1,4 @@
+
 const firstSection = document.querySelector('#first-section');
 const secondSection = document.querySelector('#second-section');
 let hasScrolled = false;
@@ -11,3 +12,5 @@ window.addEventListener('wheel', function(event) {
     });
   }
 });
+
+
