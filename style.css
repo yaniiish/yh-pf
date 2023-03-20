@@ -11,14 +11,90 @@
     padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
+.container {
+    font-family: 'gilroylight', sans-serif;
+}
 
+/* _________________________NAVBAR_________________________ */
 nav {
     height: 110px;
     position: absolute;
     width: 100%;
-    background-color: red;
+    background-color: #F5F5F5;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
 }
+
+.logo {
+    font-size: 36px;
+}
+
+.burger {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.menu-open {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    height: 300px;
+    border-radius;
+    width: 200px;
+    background-color: #14CF93;
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    display: none;
+}
+.croix {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.list-open {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.list-open-li:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+
+.menu {
+    display: none;
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: bolder;
+}
+.menu li {
+    cursor: pointer;
+}
+.numero {
+    color: #14CF93;
+}
+
+/* FIN NAVBAR */
+
 
 main {
     height: 100vh;
@@ -27,11 +103,33 @@ main {
 .s1 {
     height: 100vh;
     padding-top: 120px;
-    background-color: blue;
+    background-color: #F5F5F5;
  
 }
 
 .s2 {
     height: 100vh;
     background-color: green;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+.burger {
+    display: none;
+}
+
+.menu  {
+    display: flex;
+    gap: 50px;
+}
+
+
+    
 }

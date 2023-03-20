@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YH portfolio</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+<div class="container">
+    <nav> 
+        <div class="logo">YH</div>
+        <img src="img/burger.svg" alt="menu burger" class="burger">
+        <ul class="menu">
+                <a href="#first-section"><li><span class="numero">01.</span> About</li></a>
+                <a href="#second-section"><li><span class="numero">02.</span> Projets</li></a>
+                <a href="#third-section"><li><span class="numero">03.</span> Contact</li></a>
+        </ul>
+    </nav>
+    <div class="menu-open">
+        <ul class="list-open">
+            <img src="img/croix.svg" alt="menu burger" class="croix">
+            <a href="#first-section"><li class="list-open-li">About</li>
+            <a href="#second-section"><li class="list-open-li">Projets</li>
+            <a href="#third-section"><li class="list-open-li">Contact</li>
+        </ul>
+    </div>
+    
 
-    <nav> JE SUIS LA NAVBAR </nav>
     <main>
         <section id="first-section" class="s1">
             <h1 class="magic-hover">SECTION 1 DEVELOPPEUR WEB ET WEB MOBILE</h1>
@@ -18,8 +37,7 @@
             SECTION 2
         </section>
     </main>
- 
-    <script src="script.js"></script>
+</div>
     <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
     <script type="text/javascript">
         options = {
@@ -32,5 +50,6 @@
           };
         magicMouse(options);
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
