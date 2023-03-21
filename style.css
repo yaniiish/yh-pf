@@ -169,7 +169,6 @@ main {
 }
 
 .stack {
-    padding-top: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,6 +180,13 @@ main {
     height: 50px;
     aspect-ratio: 3/2;
     object-fit: contain;
+}
+
+.cv {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
 }
 
 /* FIN S1 */
