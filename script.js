@@ -24,6 +24,9 @@ burger.addEventListener('click', function () {
 
  croix.addEventListener('click', function () {
   menuOpen.style.display = "none"
+  menuOpen.classList.toggle("show");
+
+
 })
 window.addEventListener('resize', hideElementOnLargeScreen);
 

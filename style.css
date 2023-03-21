@@ -49,7 +49,7 @@ nav {
     right: 0;
     height: 300px;
     border-radius;
-    width: 200px;
+    width: 160px;
     background-color: #14CF93;
     border-top-left-radius: 130px;
     border-bottom-left-radius: 130px;
@@ -58,7 +58,21 @@ nav {
     justify-content: center;
     border: 1px solid black;
     display: none;
-}
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-name: slide-in;
+  }
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+ 
+
 .croix {
     cursor: pointer;
     width: 40px;
@@ -74,11 +88,18 @@ nav {
     font-weight: bolder;
 }
 
-.list-open-li:hover {
-    opacity: 60%;
-    cursor: pointer;
-}
 
+li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width 0.3s ease-in-out;
+}
+li:hover::after {
+    width: 100%;
+}
 
 .menu {
     display: none;
@@ -95,7 +116,7 @@ nav {
 
 /* FIN NAVBAR */
 
-
+/* _________________________PREMIERE SECTION_________________________ */
 main {
     height: 100vh;
 }
@@ -107,16 +128,88 @@ main {
  
 }
 
+.nom-image {
+    padding-top: 10%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.nom {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.dev {
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.junior {
+    text-transform: uppercase;
+    color: #14CF93;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.hi{
+    width: 250px;
+    height: 250px;
+    margin-top: -50px;
+}
+
+.para {
+    margin: 10% 10%;
+}
+
+.p-contact {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.stack {
+    padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.svg {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+/* FIN S1 */
+
+
 .s2 {
     height: 100vh;
     background-color: green;
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 768px) {
-
+    .hi{
+        width: 300px;
+        height: 300px;
+        margin-top: -60px;
+    }
     
 }
 
@@ -130,6 +223,10 @@ main {
     gap: 50px;
 }
 
-
+@media screen and (max-width: 375px) {
+   .s1 {
+    height: auto;
+   }
     
 }
+    
