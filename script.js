@@ -1,3 +1,5 @@
+
+
 //scroll de la section 1 a 2
 const firstSection = document.querySelector('#first-section');
 const secondSection = document.querySelector('#second-section');
@@ -37,3 +39,18 @@ function hideElementOnLargeScreen() {
   }
 }
 
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

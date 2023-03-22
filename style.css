@@ -205,17 +205,72 @@ main {
 }
 
 /* FIN S1 */
-
+/* _________________________SECONDE SECTION_________________________ */
 
 .s2 {
-    height: 100vh;
-    background-color: green;
+    background-color: #F5F5F5;
+    padding-bottom: 30px;
 }
 
+.sous-titre {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
 
+}
+.projets {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: #F9F9F9;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
 
+}
+.projets:hover {
+    opacity: 80%;
+    transition: box-shadow 1s;
+    box-shadow: 2px 2px 2px #14CF93;
+}
+.lettre {
+    color: #14CF93;
+    font-style: italic;
+    margin-right: 6px;
+}
+.couverture {
+    width: 150px;
+    height: 100px;
+}
+.desc {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.techno {
+    padding-top: 10px;
 
-
+}
+.git {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.git-svg {
+    widh: 30px;
+    height: 30px;
+}
+.swiper {
+    width: 400px;
+    height: 400px;
+  }
 
 
 
