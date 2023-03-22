@@ -129,7 +129,13 @@ main {
 }
 
 .nom-image {
-    padding-top: 10%;
+    padding-top: 6%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -151,7 +157,8 @@ main {
     font-style: italic;
     font-size: 20px;
     font-weight: bolder;
-
+    padding: 0 10%;
+    letter-spacing: 3px;
 }
 .hi{
     width: 250px;
@@ -168,25 +175,33 @@ main {
     cursor: pointer;
 }
 
-.stack {
+.stack-cv {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+}
+
+.stack {
+    margin: 0 auto;
 }
 
 .svg {
     width: 50px;
     height: 50px;
+    margin-left: 8px;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
 
 .cv {
-    padding-top: 5%;
+    padding-top: 7%;
     display: flex;
     justify-content: center;
     cursor: pointer;
+}
+
+
+.hii {
+    display: none;
 }
 
 /* FIN S1 */
@@ -216,6 +231,21 @@ main {
         height: 300px;
         margin-top: -60px;
     }
+    .nom-image {
+        padding-top: 5%;
+    }
+
+    .para {
+        margin: 5% 10%;
+    }
+    .cv {
+        padding-top: 5%;
+    }
+    .svg {
+        width: 70px;
+        height: 70px;
+        margin-left: 30px;
+    }
     
 }
 
@@ -228,6 +258,110 @@ main {
     display: flex;
     gap: 50px;
 }
+
+.para {
+    font-size: 19px;
+}
+
+}
+
+@media screen and (min-width: 1220px) {
+   
+    .nom-image {
+        padding-top: 6%;
+        display: flex; 
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+    .wrapper {
+        align-items: start;
+    }
+    .nom {
+        font-size: 36px;
+    }
+    .dev{
+        font-size: 65px;
+        font-weight: lighter;
+    }
+    .junior{
+        font-size: 45px;
+        letter-spacing: 2px;
+    }
+    .hi {
+        display: none;
+    }
+    .hii {
+        display: block;
+        width: 350px;
+        height: 350px;
+        margin-top: -140px;
+    }
+    .para {
+        font-size: 20px;
+    }
+    .stack-cv {
+        padding-top: 5%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .stack {
+        margin: 0;
+        padding-left: 10%;
+    }
+    .cv {
+        padding-right: 20%;
+        padding-top: 0;
+    }
+    
+
+}
+
+@media screen and (min-width: 1440px) {
+    nav {
+        padding: 0 17%;
+    }
+    .nom-image {
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+    .para {
+            margin: 5% 17%;
+        }
+    .stack-cv {
+        padding-top: 0%;
+    }
+    .stack {
+        padding-left: 17%;
+    }
+
+}
+
+
+@media screen and (min-width: 1620px) {
+    nav {
+        padding: 0 20%;
+    }
+    .nom-image {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .para {
+        margin: 5% 20%;
+    }
+    .stack {
+        padding-left: 20%;
+    }
+    .cv {
+        padding-right: 27%;
+    }
+    
+}
+
+
 
 @media screen and (max-width: 375px) {
    .s1 {
