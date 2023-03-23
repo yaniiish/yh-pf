@@ -82,7 +82,9 @@
                     </div>
             </section>
             <section id="second-section" class="s2">
-                <h2 class="magic-hover sous-titre">Pro<span class="lettre">j</span>ets</h2>
+                <div class="titre-wrapper">
+                    <h2 class="magic-hover sous-titre">Pro<span class="lettre">j</span>ets</h2>
+                </div>
                            
                 <div class="swiper">
                     <!-- Additional required wrapper -->
@@ -162,18 +164,39 @@
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-                  
-                 
-                    
-                
-
             </section>
 
+            <section id="third-section" class="s3">
+                <div class="titre-wrapper">
+                    <h2 class="magic-hover sous-titre">Con<span class="lettre">T</span>act</h2>
+                </div>
+                <p class="desc2">Vous pouvez me contacter directement sur mon adresse 
+                    e-mail : <a href="mailto: yanis.herda14@gmail.com" class="mail"> yanis.herda14@gmail.com</a> où directement sur le formulaire juste en dessous !</p>
 
-           
+                <form onsubmit="return false;">
+                    <div class="container">
+                        <div>
+                            <label for="nom_entreprise">Nom de l'entreprise:</label><br>
+                            <input type="text" id="nom_entreprise" name="nom_entreprise">
+                        </div>
+                        <div>
+                            <label for="nom">Nom:</label><br>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label><br>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div>
+                            <label for="message">Message:</label><br>
 
+                            <textarea name="message" id="" cols="30" rows="4"></textarea>
 
-
+                        </div>
+                        <div class="submit magic-hover">
+                            <input type="submit" name="submit" value="Envoyer">
+                        </div>
+            </section>
         </main>
     </div>
 
@@ -194,6 +217,15 @@
         magicMouse(options);
     </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("XHVwM7FsPNcbLQ1ED");
+   })();
+</script>
 
 <script src="script.js"></script>
 </body>

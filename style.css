@@ -23,7 +23,8 @@ a {
 /* _________________________NAVBAR_________________________ */
 nav {
     height: 110px;
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     width: 100%;
     background-color: #F5F5F5;
     display: flex;
@@ -44,9 +45,9 @@ nav {
 }
 
 .menu-open {
-    position: absolute;
-    z-index: 10;
-    right: 0;
+    position: fixed;
+    z-index: 109;
+    right: -11px;
     height: 300px;
     border-radius;
     width: 160px;
@@ -211,14 +212,15 @@ main {
     background-color: #F5F5F5;
     padding-bottom: 30px;
 }
-
+.titre-wrapper {
+    display: flex;
+    justify-content: center;
+}
 .sous-titre {
     padding-top: 10px;
     padding-bottom: 30px;
     text-transform: uppercase;
     font-size: 30px;
-    text-align: center;
-
 }
 .projets {
     margin: 0 auto;
@@ -259,7 +261,6 @@ main {
 
 .techno {
     padding-top: 10px;
-
 }
 .git {
     padding-top: 15px;
@@ -275,6 +276,74 @@ main {
     height: 400px;
   }
 
+/* Fin section 2 */
+
+/* _________________________TROISIEME SECTION_________________________ */
+.s3 {
+    background-color: #F5F5F5;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.mail {
+    font-weight: bolder;
+}
+
+.desc2 {
+    margin: 0% 10% 5% 10%;
+    text-align: center;
+}
+
+  form {
+    margin: auto;
+    width: 55%;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #111111;
+    transition: background-color 0.3s ease;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+}
+input[type=submit]:hover {
+    background-color: #14CF93;
+    color: black;
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container > * {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+}
+.container > *:not(:last-child) {
+    margin-right: 10px;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #14CF93;
+    opacity: 70%;
+}
 
 
 
@@ -304,6 +373,10 @@ main {
         height: 70px;
         margin-left: 30px;
     }
+    .titre-wrapper {
+        padding-top: 20px;
+    }
+    
     
 }
 
@@ -317,10 +390,16 @@ main {
     gap: 50px;
 }
 
+.titre-wrapper {
+    padding-top: 50px;
+}
+
 .para {
     font-size: 19px;
 }
-
+.des2 {
+    font-size: 19px;
+}
 }
 
 @media screen and (min-width: 1220px) {
@@ -361,6 +440,9 @@ main {
     .para {
         font-size: 20px;
     }
+    .desc2 {
+        font-size: 20px;
+    }
     .stack-cv {
         padding-top: 5%;
       flex-direction: row;
@@ -374,8 +456,31 @@ main {
         padding-right: 20%;
         padding-top: 0;
     }
-    
+    .sous-titre {
+        font-size: 45px;
+        font-weight: lighter;
+    }
+    .projets {
+        width: 600px;
+        border-radius: 2%;
 
+    }
+    .swiper {
+        width: 750px;
+      }
+      .couverture {
+        padding-bot: 20px;
+      }
+      .desc {
+        padding-top: 20px;
+    }
+    .techno {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .desc2 {
+        margin: 0% 10% 2% 10%;
+    }
 }
 
 @media screen and (min-width: 1440px) {

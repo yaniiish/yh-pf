@@ -54,3 +54,33 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+//email
+
+
+
+// Fonction pour envoyer l'e-mail
+function sendMail() {
+  // Récupérer les données du formulaire
+  const nom_entreprise = document.getElementById("nom_entreprise").value;
+  const nom = document.getElementById("nom").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Paramètres de l'e-mail à envoyer
+  const params = {
+      nom_entreprise: nom_entreprise,
+      nom: nom,
+      email: email,
+      message: message
+  };
+
+  // Envoyer l'e-mail en utilisant emailJS
+  emailjs.send("service_9q0lgbf", "template_r11l3gl", params)
+      .then(function () {
+          alert("Votre e-mail a été envoyé avec succès !");
+      }, function (error) {
+          console.error("Une erreur est survenue : ", error);
+      });
+}
