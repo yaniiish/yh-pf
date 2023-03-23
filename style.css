@@ -250,10 +250,13 @@ main {
 }
 .desc {
     padding-top: 10px;
+    margin: 0 5%;
+    gap: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .techno {
     padding-top: 10px;
 
