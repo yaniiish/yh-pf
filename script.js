@@ -1,22 +1,37 @@
+// animation 
+const logo = document.querySelector('.logo');
+console.log(logo);
+gsap.fromTo(".logo", {
+  x : -300,
+  
+}, {x : 0,
+  duration : 0.8
+})
+
+const menu = document.querySelector('.menu');
+gsap.fromTo(".menu", {
+  x : 300,
+}, {x : 0,
+  duration : 0.8
+})
+
+const burger = document.querySelector('.burger');
+gsap.fromTo(".burger", {
+  x : 300,
+}, {x : 0,
+  duration : 0.8
+})
 
 
-//scroll de la section 1 a 2
+
+
+// ...
+
 const firstSection = document.querySelector('#first-section');
 const secondSection = document.querySelector('#second-section');
 let hasScrolled = false;
 
-window.addEventListener('wheel', function(event) {
-  if (event.deltaY > 0 && !hasScrolled) {
-    hasScrolled = true;
-    window.scrollTo({
-      top: secondSection.offsetTop,
-      behavior: 'smooth'
-    });
-  }
-});
-
 //MENU
-const burger = document.querySelector(".burger");
 const menuOpen =  document.querySelector(".menu-open");
 const croix = document.querySelector(".croix");
 
@@ -56,7 +71,6 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-//email
 
 
 
@@ -67,6 +81,9 @@ function sendMail() {
   const nom = document.getElementById("nom").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
+  const msg = document.querySelector('.msg');
+  const form = document.querySelector('.form')
+
 
   // Paramètres de l'e-mail à envoyer
   const params = {
@@ -79,8 +96,9 @@ function sendMail() {
   // Envoyer l'e-mail en utilisant emailJS
   emailjs.send("service_9q0lgbf", "template_r11l3gl", params)
       .then(function () {
-          alert("Votre e-mail a été envoyé avec succès !");
-      }, function (error) {
-          console.error("Une erreur est survenue : ", error);
-      });
+          msg.innerText = "Message envoyé !"
+          form.reset()
+      }, function (error) {});
 }
+
+

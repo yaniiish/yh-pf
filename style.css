@@ -321,6 +321,7 @@ input[type=submit] {
 .submit {
     display: flex;
     justify-content: center;
+ 
 }
 input[type=submit]:hover {
     background-color: #14CF93;
@@ -344,7 +345,9 @@ input:focus, textarea:focus {
     border: 2px solid #14CF93;
     opacity: 70%;
 }
-
+.msg {
+    text-align: center;
+}
 
 
 

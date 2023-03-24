@@ -37,10 +37,13 @@
                 <img src="img/croix.svg" alt="menu burger" class="croix">
                 <a href="#first-section">
                     <li class="list-open-li">About</li>
+                </a>
                     <a href="#second-section">
                         <li class="list-open-li">Projets</li>
+                    </a>
                         <a href="#third-section">
                             <li class="list-open-li">Contact</li>
+                        </a>
             </ul>
         </div>
         <!-- PREMIERE SECTION -->
@@ -58,12 +61,12 @@
                     </div>
                 </div>
                 
-                <p class="para">
+                <div class="para">
                     Après plusieurs mois d’apprentissage en autodidacte suivi d’une formation “developpeur web et web
                     mobile” (équivalent BAC + 2), je suis à la recherche d'un premier poste en tant que developpeur web
                     junior ! Je reste également ouvert à l'alternance !<br>
                     N'hésitez pas à me <a href='#third-section' class="p-contact"> contacter </a> pour plus d'informations.
-                </p>
+                </div>
                 <div class="stack-cv">
                     <div class="stack">
                             <img src="img/react.svg" alt="react" class="svg">
@@ -173,7 +176,7 @@
                 <p class="desc2">Vous pouvez me contacter directement sur mon adresse 
                     e-mail : <a href="mailto: yanis.herda14@gmail.com" class="mail"> yanis.herda14@gmail.com</a> où directement sur le formulaire juste en dessous !</p>
 
-                <form onsubmit="return false;">
+                <form class="form" onsubmit="return false;">
                     <div class="container">
                         <div>
                             <label for="nom_entreprise">Nom de l'entreprise:</label><br>
@@ -190,12 +193,14 @@
                         <div>
                             <label for="message">Message:</label><br>
 
-                            <textarea name="message" id="" cols="30" rows="4"></textarea>
+                            <textarea name="message" id="message" cols="30" rows="4"></textarea>
 
                         </div>
                         <div class="submit magic-hover">
-                            <input type="submit" name="submit" value="Envoyer">
+                            <input type="submit" name="submit" value="Envoyer" onclick="sendMail()">
                         </div>
+                        <span class="msg"></span>
+
             </section>
         </main>
     </div>
@@ -226,8 +231,9 @@
       emailjs.init("XHVwM7FsPNcbLQ1ED");
    })();
 </script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 
 </html>
