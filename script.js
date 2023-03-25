@@ -1,29 +1,3 @@
-// animation 
-const logo = document.querySelector('.logo');
-console.log(logo);
-gsap.fromTo(".logo", {
-  x : -300,
-  
-}, {x : 0,
-  duration : 0.8
-})
-
-const menu = document.querySelector('.menu');
-gsap.fromTo(".menu", {
-  x : 300,
-}, {x : 0,
-  duration : 0.8
-})
-
-const burger = document.querySelector('.burger');
-gsap.fromTo(".burger", {
-  x : 300,
-}, {x : 0,
-  duration : 0.8
-})
-
-
-
 
 // ...
 
@@ -34,6 +8,8 @@ let hasScrolled = false;
 //MENU
 const menuOpen =  document.querySelector(".menu-open");
 const croix = document.querySelector(".croix");
+const burger = document.querySelector('.burger');
+
 
 burger.addEventListener('click', function () {
   menuOpen.style.display = "flex"
@@ -101,4 +77,99 @@ function sendMail() {
       }, function (error) {});
 }
 
+
+// animation 
+const logo = document.querySelector('.logo');
+gsap.fromTo(".logo", {
+  y : -200,
+}, {y : 0,
+  duration : 1,
+  delay: 1
+})
+
+const menu = document.querySelector('.menu');
+gsap.fromTo(".menu", {
+  y : -200,
+}, {y: 0,
+  duration : 1,
+  delay: 1
+})
+
+gsap.fromTo(".burger", {
+  y : -200,
+}, {y : 0,
+  duration : 1,
+  delay: 1
+})
+
+const nom = document.querySelector('.nom');
+gsap.fromTo(".nom", {
+  opacity : 0,
+}, {opacity : 1,
+  delay: 1,
+  duration : 2,
+})
+
+const dev = document.querySelector('.dev');
+gsap.fromTo(".dev", {
+  opacity : 0,
+}, {opacity : 1,
+  delay: 1,
+  duration : 2,
+})
+
+const junior = document.querySelector('.junior');
+gsap.fromTo(".junior", {
+  x : 3000,
+}, {x : 0,
+  duration : 1.5,
+    delay: 0.7
+})
+
+const hii = document.querySelector('.hii');
+gsap.fromTo(".hii", {
+  y: -100,
+  x: -300,
+  scale: 4
+}, {
+  y: 0,
+  x: 0,
+  duration : 1.5,
+  scale: 1
+})
+
+
+const hi = document.querySelector('.hi');
+gsap.fromTo(".hi", {
+  scale: 4,
+}, {
+  duration : 1.5,
+  scale: 1
+})
+
+const para = document.querySelector('.para');
+gsap.fromTo(".para",{
+  opacity : 0,
+}, {opacity : 1,
+  delay: 1,
+  duration : 2,
+})
+
+const stack = document.querySelector('.stack');
+gsap.fromTo(".stack", {
+  y : 300,
+}, {y : 0,
+  duration : 1,
+    delay: 1
+})
+
+
+const cv = document.querySelector('.cv');
+gsap.fromTo(".cv", {
+  y: 300,
+}, {y : 0,
+  duration : 1,
+    delay: 1
+
+})
 
