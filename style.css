@@ -20,6 +20,16 @@ a {
     font-family: 'gilroylight', sans-serif;
 }
 
+* {
+    cursor: url(img/cursor.png) 30 30, auto;
+  }
+  
+  
+  
+  
+  
+  
+
 /* _________________________NAVBAR_________________________ */
 nav {
     height: 110px;
