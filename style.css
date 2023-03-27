@@ -130,10 +130,8 @@ li:hover::after {
 /* _________________________PREMIERE SECTION_________________________ */
 
 .s1 {
-    height: 100vh;
     padding-top: 120px;
     background-color: #F5F5F5;
- 
 }
 
 .nom-image {
@@ -202,6 +200,7 @@ li:hover::after {
 
 .cv {
     padding-top: 7%;
+    padding-bottom: 5%;
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -363,6 +362,9 @@ input:focus, textarea:focus {
 /* MEDIA QUERY */
 
 @media screen and (min-width: 768px) {
+    .s1 {
+        height: 100vh;
+    }
     .hi{
         width: 300px;
         height: 300px;
