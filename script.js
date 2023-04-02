@@ -173,3 +173,6 @@ gsap.fromTo(".cv", {
 
 })
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
